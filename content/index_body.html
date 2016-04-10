@@ -1,0 +1,40 @@
+<div id="pages">
+	<div class="wrap">
+		<div class="top-blue-bar">
+			<div class="wrap-inner">
+				<div class="hgroup">
+					<h2 class="page-title">API</h2>
+					<h3 class="page-subtitle">“文档中心包含开放平台所有平台接入、业务说明，以及API接口文档”</h3>
+				</div>
+				<ul class="type-tab-panel J_typeTabpanel">
+					<li class="cur">API目录</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="wrap-inner">
+			<div class="type-tab-con J_TypeTabcon">
+				<div class="J_showCon_1">
+					<div class="top-three-col block-api-directory">
+						<div class="mod">
+							{pc:content action="category" catid="1" siteid="$siteid" }								
+								<ul class="list">
+								{loop $data $r}    	
+									<li>
+										<h3>
+											<a href="{$r[url]}">{$r[catname]}</a>
+										</h3>
+										<p>{$r[description]}</p>
+									</li>
+								{/loop}
+								</ul>
+							{/pc}
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="//g.alicdn.com/sj/openplatform/1.3.0/js/page/doc-center.js"></script>

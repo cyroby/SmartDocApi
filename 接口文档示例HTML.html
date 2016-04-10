@@ -1,0 +1,222 @@
+
+<h1 id="s0"><i class="triangle open"></i>公共参数</h1>
+<div class="J_sCon">
+	<dd>请求地址：</dd>
+	<table border="1" cellpadding="0" cellspacing="0"> 
+		<tbody>
+			<tr>
+				<th width="20%">环境</th>
+				<th width="80%">HTTP请求地址</th>
+			</tr>
+			<tr>
+				<td>正式环境</td>
+				<td>http://api.baidu.com</td>
+			</tr>
+			<tr>
+				<td>测试环境</td>
+				<td>http://box.api.baidu.com</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<dd>公共请求参数：</dd>
+	<table border="1" cellpadding="0" cellspacing="0"> 
+		<thead>
+			<tr> 
+				<th width="18%">名称</th> 
+				<th width="10%">类型</th> 
+				<th width="10%">是否必须</th> 
+				<th>描述</th> 
+			</tr> 
+		</thead>
+		<tbody>
+		</tbody> 
+	</table>
+</div>
+
+<h1 id="s1"><i class="triangle open"></i>请求参数</h1>
+<div class="J_sCon">
+	<table border="1" cellpadding="0" cellspacing="0"> 
+		<thead>
+			<tr> 
+				<th width="22%">名称</th> 
+				<th width="20%">类型</th> 
+				<th width="10%">是否必须</th> 
+				<th width="12%">默认值</th>
+				<th width="36%">描述</th>
+			</tr> 
+		</thead>
+		<tbody>
+			<tr> 
+				<td>format</td>
+				<td>String</td>
+				<td>非必须</td>
+				<td>json</td>	
+				<td>返回数据格式,默认json</td> 
+			</tr> 
+		</tbody> 
+	</table>
+</div>
+
+<h1 id="s2"><i class="triangle open"></i>响应参数</h1>
+<div class="J_sCon">
+	<table border="1" cellpadding="0" cellspacing="0"> 
+		<thead>
+			<tr> 
+				<th width="25%">名称</th> 
+				<th width="20%">类型</th> 
+				<th width="15%">示例值</th> 
+				<th width="40%">描述</th>
+			</tr> 
+		</thead>
+		<tbody>
+		
+			<tr> 
+				<td>title</td> 
+				<td>String</td>
+				<td>【平安银行】平安银行：实施2012年中期利润分配方案后调整非公开发行股票发行价格及发行数量</td> 
+				<td>文章标题</td> 
+			</tr>
+			
+			<tr> 
+				<td>content</td> 
+				<td>String</td>
+				<td>安银行行长邵平6日在第三届平安地产金融创新论坛上表示，中国房地产业“新五年”的大局，将是由“快”向“稳”的转变。</td> 
+				<td>文章内容</td> 
+			</tr>
+			
+			<tr> 
+				<td>releaseTime</td> 
+				<td>datetime</td>
+				<td>2015-12-07 00:02:00.0</td> 
+				<td>发布时间</td> 
+			</tr>
+			
+			<tr> 
+				<td>event</td> 
+				<td>String</td>
+				<td>经营管理</td> 
+				<td>事件分类</td> 
+			</tr>
+			
+			<tr> 
+				<td>hot</td> 
+				<td>int</td>
+				<td>111</td> 
+				<td>热度</td> 
+			</tr>
+			
+			<tr> 
+				<td>judge</td> 
+				<td>int</td>
+				<td>4</td> 
+				<td>云脑研判(1.特大利好、2.重大利好、3.关注利好、4.一般利好、5.高危预警、6.警戒预警、7.关注预警、8.一般预警、9.一般舆情)</td> 
+			</tr>
+			
+			<tr> 
+				<td>md5Url</td> 
+				<td>String</td>
+				<td>da1e646bf47e046c597f82585428b464</td> 
+				<td>md5加密后的文章url地址</td> 
+			</tr>
+			
+			
+		</tbody> 
+	</table>
+</div>
+
+<h1 id="s3"><i class="triangle open"></i>请求示例</h1>
+<div class="J_sCon">
+	<div class="code-tab">
+		<ul class="tab-panel J_codeTabPanel">
+			<li data-index="0">JAVA</li>
+			<li data-index="1">.NET</li>
+			<li data-index="2">PHP</li>
+			<li data-index="3">Python</li>
+			<li class="cur" data-index="4">CURL</li>
+		</ul>
+		<div class="tab-con J_codeTabCon">
+			<div class="tab-item-0" style="display:none;">
+				<pre class="brush:java;"></pre>
+			</div>
+			<div class="tab-item-1" style="display:none;">
+				<pre class="brush:csharp;"></pre>
+			</div>
+			<div class="tab-item-2" style="display:none;">
+				<pre class="brush:php;"></pre>
+			</div>
+			<div class="tab-item-3" style="display:none;">
+				<pre class="brush:python;"></pre>
+			</div>
+			<div class="tab-item-4">
+				<pre class="brush:shell;">curl "http://baidu.com"</pre>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<h1 id="s4"><i class="triangle open"></i>响应示例</h1>
+<div class="J_sCon">
+	<div class="code-tab">
+		<ul class="tab-panel J_codeTabPanel">
+			<li data-index="0">XML示例</li>
+			<li data-index="1" class="cur" >JSON示例</li>
+		</ul>
+		<div class="tab-con J_codeTabCon">
+			<div class="tab-item-0" style="display:none;">
+				<pre class="brush:xml;"></pre>
+			</div>
+			<div class="tab-item-1">
+				<pre class="brush:js;">
+				{&quot;listBean&quot;:{&quot;list&quot;:[{&quot;id&quot;:635731,&quot;stockCode&quot;:&quot;300248&quot;,&quot;title&quot;:&quot;【新开普】新开普携200所高校共创“互联网+”智慧校园&quot;,&quot;content&quot;:&quot;html文本内容&quot;,&quot;releaseTime&quot;:&quot;2015-11-09 16:37:00.0&quot;,&quot;source&quot;:&quot;腾讯证券&quot;,&quot;hot&quot;:82,&quot;event&quot;:&quot;其他事件&quot;,&quot;judge&quot;:9,&quot;excavationType&quot;:3,&quot;md5Url&quot;:&quot;3769403ce9e227cca9ae1e1ace47e418&quot;}]}}
+				</pre>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1 id="s5"><i class="triangle open"></i>异常示例</h1>
+<div class="J_sCon">
+	<div class="code-tab">
+		<ul class="tab-panel J_codeTabPanel">
+			<li class="cur" data-index="0">XML示例</li>
+			<li data-index="1">JSON示例</li>
+		</ul>
+		<div class="tab-con J_codeTabCon">
+			<div class="tab-item-0">
+				<pre class="brush:xml;"></pre>
+			</div>
+			<div class="tab-item-1" style="display:none;">
+				<pre class="brush:js;"></pre>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h1 id="s6"><i class="triangle open"></i>错误码解释</h1>
+<div class="J_sCon">
+	<table border="1" cellpadding="0" cellspacing="0"> 
+		<thead>
+			<tr> 
+				<th width="30%">错误码</th> 
+				<th width="30%">错误描述</th> 
+				<th width="40%">解决方案</th> 
+			</tr> 
+		</thead>
+		<tbody>
+		</tbody> 
+	</table>
+</div>       
+
+<h1 id="s7"><i class="triangle open"></i>API工具</h1>
+<div class="J_sCon">
+	<div class="api-btn-wrap"></div>
+</div>            
+
+<h1 id="s8"><i class="triangle open"></i>如何获得此API</h1>
+<div class="J_sCon"></div>
+
+<h1 id="s9"><i class="triangle open"></i>FAQ</h1>
+<div class="J_sCon"></div> 
+					

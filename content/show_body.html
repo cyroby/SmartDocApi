@@ -1,0 +1,107 @@
+
+<script src="//g.alicdn.com/tb/tracker/1.0.13/index.js"></script>
+<script src="//g.alicdn.com/kissy/k/1.4.4/seed.js" data-config="{combine:false}"></script>
+<script src="//g.alicdn.com/shop/tae-portal/0.3.6/scripts/lib/underscore.js"></script>
+<script src="//g.alicdn.com/shop/tae-portal/0.3.6/scripts/module/floatBox.js"></script>
+
+<div id="pages">
+    <div class="wrap">
+		<div class="top-bar">
+			<div class="wrap-inner">
+            	<div class="crumbs">
+					<a href="/" class="dohome">网站首页</a> &gt; 
+                   {preg_replace('/( \> )$/', '', catpos($catid))}
+                </div>
+                <div class="search-wrap">
+                    <div class="search">
+                        <form action="#" name="search-form" id="search-form">
+                            <input placeholder="资料库/API搜索" value="" name="keyword" class="ipt-text J_searchIpt" autocomplete="off" disableautocomplete="">
+							<input type="hidden" name="searchType" value="4">
+							<i class="iconfont J_SearchBtn"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+		</div>
+		
+        <!--E 顶部蓝条 -->
+        <div class="wrap-inner block-docs-wrap J_FloatContainer">
+            <div class="docs-left" id="sideMenu">
+					<h3 class="menu-title">{$CATEGORYS[$catid][catname]}</h3>
+					<ul class="menu-1 J_subMenu">						
+						{pc:content  action="lists" catid="$catid" order="id DESC"}
+							<li>
+							{loop $data $key $val}
+								<a href="{$val['url']}" > {$val['title']}
+									<p>{$val['description']}</p>
+								</a>
+							{/loop}
+							</li>
+						{/pc}
+					</ul>
+            </div>
+			
+			<!-- 右侧主内容 -->
+            <div class="docs-right">
+    			<style>
+					.api .block-docs-wrap .docs-right .doc-detail-bd h1 {
+						font-size:20px;
+					}
+					.block-docs-wrap .docs-right .doc-detail-bd h1 {
+						margin-bottom: 0px;
+					}
+					.doc-detail-bd table {
+						margin-bottom: 20px;
+					}
+				</style>
+
+	            <div class="mtl">
+                    <h2 class="mtl-main" style="font-size:22px;margin-bottom:10px;">{$title}</h2>
+
+                    <ul class="tag-list">
+						<li><a href="#">需要授权</a></li>
+						<li><a href="#">不需要授权</a></li>
+					</ul>
+
+                    <p class="mtl-desc">{$SEO['description']}</p>
+
+                    <div class="mao-list">
+                        <div class="inner header-fixed" id="maoList" style="z-index: 999; width: 170px; opacity: 0.98; position: relative; top: 0px;">
+                            <ul class="mao-one">
+                                <li class="mao-one-li"><a href="#s0" class="">公共参数</a></li>
+                                <li class="mao-one-li"><a href="#s1" class="">请求参数</a></li>
+                                <li class="mao-one-li"><a href="#s2" class="">响应参数</a></li>
+                                <li class="mao-one-li"><a href="#s3" class="">请求示例</a></li>
+                                <li class="mao-one-li"><a href="#s4" class="">响应示例</a></li>
+                                <li class="mao-one-li"><a href="#s5" class="">异常示例</a></li>
+                                <li class="mao-one-li"><a href="#s6" class="">错误码解释</a></li>
+                                <li class="mao-one-li current"><a href="#s7" class="fc-blue">API工具</a></li>
+                            	<li class="mao-one-li"><a href="#s8">如何获得此API</a></li>
+                                <li class="mao-one-li"><a href="#s9">FAQ</a></li>
+                            </ul>
+                            <div class="mao-s-h J_maoTrigger" style="display: none;">
+								<i class="iconfont icon-s"></i>
+								<i class="iconfont icon-h"></i>
+							</div>
+                        </div>
+						<div class="fixed-placeholder" style="height: 320px; margin-top: 0px; overflow: hidden;"></div>
+                    </div>
+
+                </div>
+                
+                <div class="doc-detail-bd J_apiDetailBd" id="bd">
+				
+					{$content}
+					
+				</div>
+            
+			</div>
+        </div>
+    </div>
+    <script src="//g.alicdn.com/shop/tae-portal/0.3.6/scripts/docs-cc-v2.js"></script>
+</div>
+
+<a href="#" class="go-back" style="display: block; position: relative; bottom: 230px;">
+	<i class="iconfont"></i>
+	<span class="txt">返回<br>顶部</span>
+</a>
